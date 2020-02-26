@@ -1,16 +1,16 @@
-module.exports = (client, message) => {
+module.exports = (client, msg) => {
     // Ignora todos bots
-    if (message.author.bot) return;
+    if (msg.author.bot) return;
   
-    // Ignora messagem que nao tenha prefix do config.json)
-    if (message.content.indexOf(client.config.prefix) !== 0) return;
+    // Ignora msgm que nao tenha prefix do config.json)
+    if (msg.content.indexOf(client.config.prefix) !== 0) return;
   
-    const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
+    const args = msg.content.slice(client.config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
-    //tira uma mensagem de error no console
+    //se nao tiver nada dps do comando ele segui em frente
     if(args[0] == undefined) {
-        return;
+        
     }
   
     // Pega os dados do comando  no Enmap
@@ -19,9 +19,9 @@ module.exports = (client, message) => {
     // If that command doesn't exist, silently exit and do nothing
     // if (!cmd) return;
     if(!cmd) {
-        return message.reply('esse comando nao existe.').then(message => {message.delete(10000)});
+        return msg.reply('esse comando nao existe.').then(msg => {msg.delete(10000)});
     }
   
     // Inicia o comando
-    cmd.run(client, message, args);
+    cmd.run(client, msg);
   };
