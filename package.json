@@ -5,6 +5,7 @@
   "main": "bot.js",
   "dependencies": {
     "discord.js": "^11.5.1",
+    "enmap": "^5.2.4",
     "lowdb": "^1.0.0"
   },
   "devDependencies": {},
