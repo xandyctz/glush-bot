@@ -8,11 +8,6 @@ client.config = config;
 const fs = require('fs');
 const Enmap = require("enmap");
 
-const low = require('lowdb') //banco de dados
-const FileSync = require('lowdb/adapters/FileSync')
-const adpter = new FileSync('banco.json')
-const db = low(adpter)
-
 fs.readdir("./eventos/", (err, files) => {
     if (err) return console.error(err);
     files.forEach(file => {
