@@ -16,8 +16,9 @@ module.exports = (client, msg) => {
     // Pega os dados do comando  no Enmap
     const cmd = client.commands.get(command);
   
-    // If that command doesn't exist, silently exit and do nothing
     // if (!cmd) return;
+    
+    // se esse comando nao existe envia uma mensagem no canal que o comando foi enviado
     if(!cmd) {
         return msg.reply('esse comando nao existe.').then(msg => {msg.delete(10000)});
     }
