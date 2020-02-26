@@ -2,11 +2,8 @@
 Um simples bot para o Discord em Javascript, para o aprendizado.
 
 ## Dependências
-#### discord.js
-`npm install discord.js`
-
-#### lowdb
-[download lowdb](https://github.com/typicode/lowdb)
+#### Depois que clonar o repositorio, abre um cmd/terminal na pasta do repositorio e execute o seguinte comando
+`npm install`
 
 ## Precisa colocar no arquivo `config.json` o token do seu Bot
 ```json
