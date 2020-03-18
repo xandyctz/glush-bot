@@ -24,5 +24,5 @@ module.exports = (client, msg) => {
     }
   
     // Inicia o comando
-    cmd.run(client, msg);
+    cmd.run(client, msg, args);
   };
