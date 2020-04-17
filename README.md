@@ -9,26 +9,23 @@
 	Glush bot
 </blockquote>
 
-## 📌 About
+## 📌 Sobre
 Glush is a simple bot developed in javascript using the discord.js library
-
-## 🚀 Technology
+Glush é um simplels bot desenvolvido em JavaScript usando a biblioteca discord.js
+## 🚀 Tecnologia
 
 - [NodeJS](https://nodejs.org/)
 - [Discord.js](https://discord.js.org/)
 
-## ⏳ Installation
+## ⏳ Instalacão
 
-1. Installation of premises
+1. Instalação de dependências
 ```
 $ cd glush-bot
 $ npm install
 ```
-2. Project execution
-Before execution it is necessary to configure `config.json` and place the bot token
+2. Iniciar o bot
+Antes da execução, é necessário configurar o `config.json` e colocar o token do bot
 ```
 npm start
 ```
-
-## 📝 License
-[MIT](./LICENSE)
